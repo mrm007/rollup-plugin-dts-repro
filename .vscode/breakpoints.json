@@ -1,0 +1,62 @@
+[
+  {
+    "location": "/node_modules/.pnpm/rollup-plugin-dts@5.1.0_rollup@3.9.0/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs",
+    "line": [
+      {
+        "line": 29,
+        "character": 0
+      },
+      {
+        "line": 29,
+        "character": 0
+      }
+    ],
+    "enabled": true,
+    "logMessage": "getCompilerOptions( input: {input} )"
+  },
+  {
+    "location": "/node_modules/.pnpm/rollup-plugin-dts@5.1.0_rollup@3.9.0/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs",
+    "line": [
+      {
+        "line": 1623,
+        "character": 0
+      },
+      {
+        "line": 1623,
+        "character": 0
+      }
+    ],
+    "enabled": true,
+    "logMessage": "dts.resolveId( source: {source}, importer: {importer} )"
+  },
+  {
+    "location": "/node_modules/.pnpm/rollup-plugin-dts@5.1.0_7zjqzg65uxgwkgpqobtautry2m_rollup@3.9.0/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs",
+    "line": [
+      {
+        "line": 29,
+        "character": 0
+      },
+      {
+        "line": 29,
+        "character": 0
+      }
+    ],
+    "enabled": true,
+    "logMessage": "getCompilerOptions( input: {input} )"
+  },
+  {
+    "location": "/node_modules/.pnpm/rollup-plugin-dts@5.1.0_7zjqzg65uxgwkgpqobtautry2m_rollup@3.9.0/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs",
+    "line": [
+      {
+        "line": 1623,
+        "character": 0
+      },
+      {
+        "line": 1623,
+        "character": 0
+      }
+    ],
+    "enabled": true,
+    "logMessage": "dts.resolveId( source: {source}, importer: {importer} )"
+  }
+]

@@ -1,0 +1,15 @@
+diff --git a/dist/rollup-plugin-dts.mjs b/dist/rollup-plugin-dts.mjs
+index e9ea051624aabdf49b55343da36a6a7f36e748c1..aa191d29da728272b4be172acb4ddc2dc0c4b914 100644
+--- a/dist/rollup-plugin-dts.mjs
++++ b/dist/rollup-plugin-dts.mjs
+@@ -1624,6 +1624,10 @@ const plugin = (options = {}) => {
+             if (!importer) {
+                 return;
+             }
++            if (source.startsWith('.')) {
++                source = path.resolve(path.dirname(importer), source);
++                console.log('  resolved source:', source);
++            }
+             // normalize directory separators to forward slashes, as apparently typescript expects that?
+             importer = importer.split("\\").join("/");
+             const { compilerOptions: resolvedCompilerOptions } = getCompilerOptions(source, compilerOptions, tsconfig);

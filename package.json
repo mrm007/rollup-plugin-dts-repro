@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "patch": "sed -i '' 's/\"__patchedDependencies\"/\"patchedDependencies\"/g' package.json",
+    "unpatch": "sed -i '' 's/\"patchedDependencies\"/\"__patchedDependencies\"/g' package.json",
+    "lib": "pnpm --recursive --filter=lib",
+    "build": "pnpm lib build",
+    "build:5.1": "pnpm unpatch && pnpm lib build:5.1",
+    "build:5.1:patch": "pnpm run patch && pnpm lib build:5.1",
+    "build:5.0": "pnpm lib build:5.0"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "pnpm@7.20.0",
+  "volta": {
+    "node": "16.19.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "rollup-plugin-dts@5.1.0": "patches/rollup-plugin-dts@5.1.0.patch"
+    }
+  }
+}

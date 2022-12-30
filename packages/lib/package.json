@@ -1,0 +1,14 @@
+{
+  "name": "lib",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "build:5.1": "pnpm install rollup-plugin-dts@5.1 && pnpm build",
+    "build:5.0": "pnpm install rollup-plugin-dts@5.0 && pnpm build"
+  },
+  "devDependencies": {
+    "rollup": "^3.9.0",
+    "rollup-plugin-dts": "^5.1.0"
+  }
+}
